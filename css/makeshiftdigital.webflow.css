@@ -1079,6 +1079,11 @@ figcaption {
   width: 750px;
 }
 
+.div_block.your_frame.home {
+  width: 100%;
+  max-width: 400px;
+}
+
 .portfolio-link {
   justify-content: flex-start;
   align-items: center;
@@ -2613,10 +2618,10 @@ figcaption {
 }
 
 .rl_navbar1_button {
-  border: 1px solid var(--relume-library-lite--rl-black);
   color: var(--relume-library-lite--rl-white);
   text-align: center;
   background-color: #575757;
+  border: 1px solid #006aff;
   border-radius: 37px;
   padding: .5rem 1.25rem;
   font-family: DM Sans, sans-serif;
