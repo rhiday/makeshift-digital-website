@@ -66,7 +66,7 @@
   transition: 11s ease-in;
 }
 .your_frame:hover img,
-.your_frame.scroll-active img {
+.case:hover .your_frame img {
   object-fit: cover;
   transform: translateY(calc(-100% + 300px));
   transition: 11s ease-in;
@@ -629,20 +629,6 @@ a {
         });
       });
     }
-
-    // Image scroll on heading click
-    document.querySelectorAll('.case .heading').forEach(function(heading) {
-      heading.addEventListener('click', function(e) {
-        // Find the corresponding image container in the same .case
-        const caseDiv = this.closest('.case');
-        const imageFrame = caseDiv ? caseDiv.querySelector('.your_frame') : null;
-        
-        if (imageFrame) {
-          // Trigger the scroll animation
-          imageFrame.classList.add('scroll-active');
-        }
-      });
-    });
   });
 </script>
 </body>
