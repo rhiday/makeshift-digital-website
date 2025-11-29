@@ -65,7 +65,8 @@
   transform: translateY(0);
   transition: 11s ease-in;
 }
-.your_frame:hover img {
+.your_frame:hover img,
+.your_frame.scroll-active img {
   object-fit: cover;
   transform: translateY(calc(-100% + 300px));
   transition: 11s ease-in;
@@ -481,10 +482,14 @@ a {
                   <div class="rl_contact7_spacing-block-2-2"></div>
                   <div class="rl_contact7_spacing-block-3-2"></div>
                   <div class="rl_contact7_form-block-2 w-form">
-                    <form id="wf-form-Contact-7-Form" name="wf-form-Contact-1-Form" data-name="Contact 1 Form" method="get" class="rl_contact7_form-2" data-wf-page-id="62fb841936526c7ae6965d09" data-wf-element-id="16a9ed1f-e5fe-4a47-369b-23179b76c9f4">
-                      <div class="rl_contact7_form-field-wrapper-2"><label for="Contact-7-Name-3" class="rl-field-label-4">Name</label><input class="rl-form-input-3 w-input" maxlength="256" name="Contact-7-Name" data-name="Contact 7 Name" placeholder="Your name" type="text" id="Contact-7-Name-3" required=""></div>
-                      <div class="rl_contact7_form-field-wrapper-2"><label for="Contact-7-Email-3" class="rl-field-label-4">Email</label><input class="rl-form-input-3 w-input" maxlength="256" name="Contact-7-Email" data-name="Contact 7 Email" placeholder="Your email" type="email" id="Contact-7-Email-3" required=""></div>
-                      <div class="rl_contact7_form-field-wrapper-2"><label for="Contact-7-Message-3" class="rl-field-label-4">Message</label><textarea placeholder="Type your message..." maxlength="5000" id="Contact-7-Message-3" name="Contact-7-Message" data-name="Contact 7 Message" required="" class="rl-form-text-area-2 w-input"></textarea></div><label id="Contact-6-Checkbox" class="w-checkbox rl-form-checkbox-2">
+                    <form id="wf-form-Contact-7-Form" name="wf-form-Contact-1-Form" data-name="Contact 1 Form" action="https://formsubmit.co/YOUR_EMAIL@example.com" method="post" class="rl_contact7_form-2" data-wf-page-id="62fb841936526c7ae6965d09" data-wf-element-id="16a9ed1f-e5fe-4a47-369b-23179b76c9f4">
+                      <input type="hidden" name="_subject" value="New Contact Form Submission from Makeshift Website">
+                      <input type="hidden" name="_captcha" value="false">
+                      <input type="hidden" name="_next" value="">
+                      <input type="hidden" name="_template" value="box">
+                      <div class="rl_contact7_form-field-wrapper-2"><label for="Contact-7-Name-3" class="rl-field-label-4">Name</label><input class="rl-form-input-3 w-input" maxlength="256" name="name" data-name="Contact 7 Name" placeholder="Your name" type="text" id="Contact-7-Name-3" required=""></div>
+                      <div class="rl_contact7_form-field-wrapper-2"><label for="Contact-7-Email-3" class="rl-field-label-4">Email</label><input class="rl-form-input-3 w-input" maxlength="256" name="email" data-name="Contact 7 Email" placeholder="Your email" type="email" id="Contact-7-Email-3" required=""></div>
+                      <div class="rl_contact7_form-field-wrapper-2"><label for="Contact-7-Message-3" class="rl-field-label-4">Message</label><textarea placeholder="Type your message..." maxlength="5000" id="Contact-7-Message-3" name="message" data-name="Contact 7 Message" required="" class="rl-form-text-area-2 w-input"></textarea></div><label id="Contact-6-Checkbox" class="w-checkbox rl-form-checkbox-2">
                         <div class="w-checkbox-input w-checkbox-input--inputType-custom rl-form-checkbox-icon-2"></div><input type="checkbox" id="Contact 6 Checkbox" name="Contact-6-Checkbox" data-name="Contact 6 Checkbox" required="" style="opacity:0;position:absolute;z-index:-1"><span for="Contact-6-Checkbox" class="rl-checkbox-label-small-2 w-form-label">I accept the <a href="#" class="rl-text-style-link-2">Terms</a></span>
                       </label>
                       <div id="w-node-_16a9ed1f-e5fe-4a47-369b-23179b76ca07-e6965d09" class="rl_contact7_button-wrapper-2">
@@ -581,6 +586,63 @@ a {
     // Initial call and interval setup
     changeText(); // Set initial text
     setInterval(changeText, 3000); // Change text every 3 seconds
+
+    // Form submission handler
+    const form = document.getElementById('wf-form-Contact-7-Form');
+    const successMessage = document.querySelector('.rl-success-message-2-2');
+    const errorMessage = document.querySelector('.rl-error-message-2-2');
+    
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Hide previous messages
+        if (successMessage) successMessage.style.display = 'none';
+        if (errorMessage) errorMessage.style.display = 'none';
+        
+        // Get form data
+        const formData = new FormData(form);
+        
+        // Submit to FormSubmit
+        fetch(form.action, {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => {
+          if (response.ok) {
+            // Show success message
+            if (successMessage) {
+              successMessage.style.display = 'block';
+              form.reset();
+            }
+            // Hide form
+            form.style.display = 'none';
+          } else {
+            throw new Error('Form submission failed');
+          }
+        })
+        .catch(error => {
+          // Show error message
+          if (errorMessage) {
+            errorMessage.style.display = 'block';
+          }
+        });
+      });
+    }
+
+    // Image scroll on heading click
+    document.querySelectorAll('.case .heading').forEach(function(heading) {
+      heading.addEventListener('click', function(e) {
+        // Find the corresponding image container in the same .case
+        const caseDiv = this.closest('.case');
+        const imageFrame = caseDiv ? caseDiv.querySelector('.your_frame') : null;
+        
+        if (imageFrame) {
+          // Trigger the scroll animation
+          imageFrame.classList.add('scroll-active');
+        }
+      });
+    });
   });
 </script>
 </body>
