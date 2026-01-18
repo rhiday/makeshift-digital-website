@@ -170,6 +170,20 @@ a {
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
+/* Lottie logo overlay */
+.lottie-logo-overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	pointer-events: none;
+}
+.lottie-logo-overlay img {
+	border-radius: 50%;
+	transition: opacity 0.8s ease-in-out;
+	opacity: 0.7;
+}
 </style>
     </div>
     <main class="main-wrapper">
@@ -214,32 +228,74 @@ a {
             <div class="rl-padding-section-medium">
               <div class="rl_header1_component">
                 <div class="rl_header1_content">
-                  <h1 class="rl-heading-style-h1">B2B digital agency that drives measurable growth</h1>
+                  <h1 class="rl-heading-style-h1">The B2B Webflow Agency for Revenue Teams.</h1>
                   <div class="rl_heading1_spacing-block-1"></div>
                   <div class="rl_heading1_spacing-block-1"></div>
-                  <p class="rl-text-style-medium-3">We help founders, marketers and enterprises create tailored web and digital experiences that eliminate low-quality B2B leads and generate 10X better ones, at startup speed.</p>
+                  <p class="rl-text-style-medium-3">We build Webflow systems that convert content into pipeline. From scalable CMS architecture to automated lead routing, we turn your passive website into a growth engine.</p>
                 </div>
-                <div id="w-node-a5587814-1e49-1067-df07-f772073e4a24-e6965d09" class="rl_header1_image-wrapper">
+                <div id="w-node-a5587814-1e49-1067-df07-f772073e4a24-e6965d09" class="rl_header1_image-wrapper" style="position: relative;">
                   <div class="background" data-w-id="9bc385fa-a6c0-ef3f-f394-7b96e7063087" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/68d02665a8209ff992dd20f4/691ede1131661c6f978f2c40_b2cfafaf20f44b8a949ce6566e7bf5cb.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2" data-duration="0"></div>
+                  <div class="lottie-logo-overlay">
+                    <img src="https://cdn.brandfetch.io/webflow.com/w/200/h/200" alt="Webflow" class="rotating-logo" data-logo="0" style="width: 80px; height: 80px;">
+                  </div>
                 </div>
               </div>
               <div class="margin-top margin-small">
-                <a href="#" class="link"><span><strong>See our work </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                <a href="#conversion-layer" class="rl_navbar1_button w-button">View the Conversion Install</a>
+                <a href="#featured" class="link" style="margin-left: 1.5rem;"><span><strong>See Featured Work </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
               </div>
               <div class="margin-top margin-xlarge">
+                <div style="text-align: center; margin-bottom: 1rem; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7;">Powering growth infrastructure for:</div>
                 <div class="client-logos"><img src="images/kone.svg" loading="lazy" width="100" id="w-node-_4c445a40-014e-700c-62ba-7eb2a684dae2-e6965d09" alt="" class="custom"><img src="images/taxstar.webp" loading="lazy" width="100" id="w-node-_4c445a40-014e-700c-62ba-7eb2a684dae3-e6965d09" alt=""><img src="images/guestbook.svg" loading="lazy" width="Auto" height="50" alt="" id="w-node-_4c445a40-014e-700c-62ba-7eb2a684dae4-e6965d09"><img src="images/arkken.png" loading="lazy" width="100" height="Auto" alt="" id="w-node-_4c445a40-014e-700c-62ba-7eb2a684dae5-e6965d09"><img src="images/harmonya.svg" loading="lazy" width="120" id="w-node-_4c445a40-014e-700c-62ba-7eb2a684dae6-e6965d09" alt=""><img src="images/alphapro.png" loading="lazy" width="120" id="w-node-_4c445a40-014e-700c-62ba-7eb2a684dae7-e6965d09" alt=""></div>
               </div>
             </div>
           </div>
         </div>
       </header>
+      <section id="conversion-layer" class="rl_section_layout237">
+        <div class="rl-padding-global">
+          <div class="container-medium">
+            <div class="rl-padding-section-large">
+              <div class="rl_layout237_component-copy">
+                <div class="rl_layout237_heading-wrapper" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                  <h2>Don't just redesign. Upgrade your infrastructure.</h2>
+                  <div class="rl_layout237_spacing-block-3"></div>
+                  <p class="rl-text-style-medium-3">Most agencies sell you a static brochure. We install active revenue systems.</p>
+                </div>
+                <div class="rl_layout237_spacing-block-3"></div>
+                <div class="rl_layout237_content" style="grid-template-columns: 1fr 1fr; max-width: 900px; margin: 0 auto;">
+                  <div class="rl_layout237_item">
+                    <div class="rl_layout237_icon-wrapper"><img src="images/icon.svg" loading="lazy" alt="" class="rl_layout237_icon"></div>
+                    <div class="rl_layout237_spacing-block-4"></div>
+                    <h3>The Webflow Conversion Layer™</h3>
+                    <div class="rl_layout237_spacing-block-5"></div>
+                    <p>Turn your blog and resource library into a lead-generation machine. We install dynamic CTA templates, gated asset logic, and CRM routing into your existing Webflow site in 10 days.</p>
+                    <div class="rl_layout237_spacing-block-5"></div>
+                    <a href="#contact" class="link"><span><strong>Learn More </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                  </div>
+                  <div class="rl_layout237_item">
+                    <div class="rl_layout237_icon-wrapper"><img src="images/icon.svg" loading="lazy" alt="" class="rl_layout237_icon"></div>
+                    <div class="rl_layout237_spacing-block-4"></div>
+                    <h3>Webflow Ops & Experiments</h3>
+                    <div class="rl_layout237_spacing-block-5"></div>
+                    <p>Continuous optimization for scaling teams. We run monthly A/B tests on your "money pages," manage attribution tracking, and keep your CMS clean as you scale.</p>
+                    <div class="rl_layout237_spacing-block-5"></div>
+                    <a href="#contact" class="link"><span><strong>View Plans </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                  </div>
+                </div>
+                <div class="rl_layout237_spacing-block-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="section-about">
         <div class="page-padding">
           <div class="container-medium">
             <div class="padding-vertical padding-huge">
               <div class="about-component">
                 <div class="capsule">
-                  <div>WHO WE ARE</div>
+                  <div>WHO WE ARE</div>
                 </div>
                 <div class="div-block-8">
                   <div class="div-block-9"><img src="images/Hasan.jpg" loading="lazy" width="Auto" height="Auto" alt="" srcset="images/Hasan-p-500.jpg 500w, images/Hasan-p-800.jpg 800w, images/Hasan.jpg 921w" sizes="(max-width: 921px) 100vw, 921px" class="image-3">
@@ -247,10 +303,10 @@ a {
                     <h4 class="text-align-center">Hasan Shahriar, Founder</h4>
                   </div>
                   <div>
-                    <h3 class="margin-bottom margin-small">Founder-led agency with unique growth expertise  <br></h3>
-                    <p>With <strong>8+</strong> years of experience in B2B growth and digital strategy, I started Makeshift to bridge the gap between slow, expensive agencies and freelancers who lack strategic depth.<br><br>I partner hands-on with every client, bringing a unique blend of startup speed and enterprise quality, with application ranging from scalable full stack to GenAI applications.<br><br>We’ve served <strong>30+</strong> startups, agencies and enterprises in <strong>7</strong> countries, helping generate over <strong>300+</strong> impactful leads.<br></p>
+                    <h3 class="margin-bottom margin-small">Design is easy. Engineering revenue is hard.<br></h3>
+                    <p>Most Webflow sites look great but fail to capture demand. We bridge the gap between 'Marketing' and 'Engineering.'<br><br>We are a specialized team that understands the full stack: how to structure Webflow CMS for scale, how to map forms to HubSpot/Salesforce, and how to track attribution so you know exactly which pages are driving revenue.<br><br>You don't need another freelancer; you need a technical growth partner.<br></p>
                     <div class="rl_heading1_spacing-block-1"></div>
-                    <a href="https://www.hasanshahriar.com" target="_blank" class="link"><span><strong>More about Hasan </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                    <a href="https://www.hasanshahriar.com" target="_blank" class="link"><span><strong>Meet the Team </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
                   </div>
                 </div>
               </div>
@@ -262,40 +318,59 @@ a {
         <div class="page-padding portfolio">
           <div class="container-medium">
             <h2>Featured work</h2>
+            <p class="rl-text-style-medium-3" style="margin-top: 1rem; max-width: 600px;">Real outcomes from technical Webflow builds. CMS architecture, lead routing systems, and full-stack integrations that drive revenue.</p>
             <div class="margin-top margin-medium">
               <div class="case-study-component">
                 <div class="case">
-                  <a href="how-kone-innovation-integrated-webflow-to-their-stack-to-speed-up-digital-marketing-and-content-creation.html" class="w-inline-block">
-                    <h3 class="heading">How KONE innovation integrated Webflow to their stack to speed up digital marketing and content creation <span class="read-arrow">-&gt;</span></h3>
-                  </a>
+                  <div>
+                    <a href="how-kone-innovation-integrated-webflow-to-their-stack-to-speed-up-digital-marketing-and-content-creation.html" class="w-inline-block">
+                      <h3 class="heading">KONE — Scalable CMS Architecture <span class="read-arrow">-&gt;</span></h3>
+                      <p style="margin-top: 0.5rem; opacity: 0.8;">Migrated a fragmented blog to a centralized Webflow CMS, enabling the marketing team to launch gated assets 3x faster.</p>
+                    </a>
+                    <a href="how-kone-innovation-integrated-webflow-to-their-stack-to-speed-up-digital-marketing-and-content-creation.html" class="link" style="margin-top: 1rem; display: inline-block;"><span><strong>View case study </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                  </div>
                   <div class="div_block your_frame home"><img src="images/siteflow.png" loading="eager" id="w-node-_9f822df3-44ce-fb34-5641-9bbe718166b0-e6965d09" sizes="(max-width: 2304px) 100vw, 2304px" alt="" srcset="images/siteflow-p-500.png 500w, images/siteflow-p-800.png 800w, images/siteflow-p-1080.png 1080w, images/siteflow-p-1600.png 1600w, images/siteflow-p-2000.png 2000w, images/siteflow.png 2304w" class="case-image"></div>
                 </div>
                 <div class="case">
-                  <a href="how-the-guestbook-re-launched-a-hotel-booking-platform-using-webflow-react.html" class="w-inline-block">
-                    <h3 class="heading">How The Guestbook re-launched a hotel booking platform using Webflow + React in 4 weeks <span class="read-arrow">-&gt;</span></h3>
-                  </a>
+                  <div>
+                    <a href="how-the-guestbook-re-launched-a-hotel-booking-platform-using-webflow-react.html" class="w-inline-block">
+                      <h3 class="heading">The Guestbook — High-Intent Landing Page System <span class="read-arrow">-&gt;</span></h3>
+                      <p style="margin-top: 0.5rem; opacity: 0.8;">Built a modular landing page system with automated lead routing, increasing demo requests by 40% in month one.</p>
+                    </a>
+                    <a href="how-the-guestbook-re-launched-a-hotel-booking-platform-using-webflow-react.html" class="link" style="margin-top: 1rem; display: inline-block;"><span><strong>View case study </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                  </div>
                   <div class="div_block your_frame home"><img src="images/screencapture-theguestbook-2023-09-17-12_20_43-min.png" loading="eager" sizes="(max-width: 1400px) 100vw, 1400px" srcset="images/screencapture-theguestbook-2023-09-17-12_20_43-min-p-500.png 500w, images/screencapture-theguestbook-2023-09-17-12_20_43-min-p-800.png 800w, images/screencapture-theguestbook-2023-09-17-12_20_43-min-p-1080.png 1080w, images/screencapture-theguestbook-2023-09-17-12_20_43-min.png 1400w" alt="" class="case-image"></div>
                 </div>
                 <div class="case">
-                  <a href="how-arkken-launches-quick-landing-pages-with-webflow-to-get-early-feedback-on-their-customers.html" class="w-inline-block">
-                    <h3 class="heading">How Arkken launches quick landing pages with Webflow to get early feedback on their customers <span class="read-arrow">-&gt;</span></h3>
-                  </a>
+                  <div>
+                    <a href="how-arkken-launches-quick-landing-pages-with-webflow-to-get-early-feedback-on-their-customers.html" class="w-inline-block">
+                      <h3 class="heading">Arkken — Complete Marketing Stack Overhaul <span class="read-arrow">-&gt;</span></h3>
+                      <p style="margin-top: 0.5rem; opacity: 0.8;">A full site rebuild + HubSpot integration, giving the sales team real-time visibility into web leads.</p>
+                    </a>
+                    <a href="how-arkken-launches-quick-landing-pages-with-webflow-to-get-early-feedback-on-their-customers.html" class="link" style="margin-top: 1rem; display: inline-block;"><span><strong>View case study </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                  </div>
                   <div class="div_block your_frame home"><img src="images/screencapture-arkken-fi-2022-11-21-12_19_50-1.png" loading="eager" width="Auto" height="Auto" alt="" srcset="images/screencapture-arkken-fi-2022-11-21-12_19_50-1-p-500.png 500w, images/screencapture-arkken-fi-2022-11-21-12_19_50-1.png 800w" sizes="(max-width: 800px) 100vw, 800px" class="case-image"></div>
                 </div>
                 <div class="case">
-                  <a href="how-storylake-re-invented-their-brand-using-a-multilingual-website-in-webflow-and-lead-magnets.html" class="w-inline-block">
-                    <h3 class="heading">How Storylake re-intented their brand using a multilingual website in Webflow and lead magnets <span class="read-arrow">-&gt;</span></h3>
-                  </a>
+                  <div>
+                    <a href="how-storylake-re-invented-their-brand-using-a-multilingual-website-in-webflow-and-lead-magnets.html" class="w-inline-block">
+                      <h3 class="heading">How Storylake re-intented their brand using a multilingual website in Webflow and lead magnets <span class="read-arrow">-&gt;</span></h3>
+                    </a>
+                    <a href="how-storylake-re-invented-their-brand-using-a-multilingual-website-in-webflow-and-lead-magnets.html" class="link" style="margin-top: 1rem; display: inline-block;"><span><strong>View case study </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                  </div>
                   <div class="div_block your_frame home"><img src="images/storylake.png" loading="eager" sizes="(max-width: 1448px) 100vw, 1448px" srcset="images/storylake-p-500.png 500w, images/storylake-p-800.png 800w, images/storylake-p-1080.png 1080w, images/storylake.png 1448w" alt="" class="case-image"></div>
                 </div>
                 <div class="case">
-                  <a href="how-krusti-foodkits-created-an-end-to-end-ecommerce-experience-with-shopify-webflow.html" class="w-inline-block">
-                    <h3 class="heading">How Krusti Foodkits created an end-to-end ecommerce experience using Shopify + Webflow <span class="read-arrow">-&gt;</span></h3>
-                  </a>
+                  <div>
+                    <a href="how-krusti-foodkits-created-an-end-to-end-ecommerce-experience-with-shopify-webflow.html" class="w-inline-block">
+                      <h3 class="heading">How Krusti Foodkits created an end-to-end ecommerce experience using Shopify + Webflow <span class="read-arrow">-&gt;</span></h3>
+                    </a>
+                    <a href="how-krusti-foodkits-created-an-end-to-end-ecommerce-experience-with-shopify-webflow.html" class="link" style="margin-top: 1rem; display: inline-block;"><span><strong>View case study </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                  </div>
                   <div class="div_block your_frame home"><img src="images/portfolio-krusti.png" loading="eager" sizes="(max-width: 800px) 100vw, 800px" srcset="images/portfolio-krusti-p-500.png 500w, images/portfolio-krusti.png 800w" alt="" class="case-image _3"></div>
                 </div>
                 <div class="margin-top margin-large text-align-center">
-                  <a href="/portfolio.html" class="link"><span><strong>See more work </strong></span><span class="text-span-3"><strong>-&gt;</strong></span></a>
+                  <a href="/portfolio.html" class="rl_navbar1_button w-button" style="background-color: #333; color: white;">See more work</a>
                 </div>
               </div>
             </div>
@@ -362,20 +437,67 @@ a {
         <div class="page-padding">
           <div class="container-medium">
             <div class="margin-vertical margin-huge">
-              <div class="cta-component">
-                <section class="testimonial-image-left">
-                  <div class="container">
-                    <div class="testimonial-wrapper-four">
-                      <div class="testimonial-left"><img src="images/1539341228984.jpeg" loading="lazy" alt="" class="testimonial-image-four"></div>
-                      <div class="testimonial-right">
-                        <div class="heading-small-2 margin-bottom-32px">Trusted growth partner</div>
-                        <div class="rl_heading1_spacing-block-1"></div>
-                        <p class="testimonial-text-four">Makeshift has been our go-to partner for everything web and growth 3+ years. We ran 50+ experiments together in our web plarform that unlocked new demand for our premium home furniture brand.<br></p>
-                        <h4>Anne Puukko, Founder</h4><img src="images/arkken.png" loading="lazy" width="100" height="Auto" alt="" class="absolute">
+              <div class="cta-component testimonial-slider-wrapper" style="position: relative;">
+                <div class="testimonial-slider" style="overflow: hidden;">
+                  <div class="testimonial-track" style="display: flex; transition: transform 0.5s ease;">
+                    <!-- Slide 1 -->
+                    <section class="testimonial-image-left testimonial-slide" style="min-width: 100%; flex-shrink: 0;">
+                      <div class="container">
+                        <div class="testimonial-wrapper-four">
+                          <div class="testimonial-left"><img src="images/1539341228984.jpeg" loading="lazy" alt="Anne Puukko" class="testimonial-image-four"></div>
+                          <div class="testimonial-right">
+                            <div class="heading-small-2 margin-bottom-32px">Trusted growth partner</div>
+                            <div class="rl_heading1_spacing-block-1"></div>
+                            <p class="testimonial-text-four">Makeshift has been our go-to partner for everything web and growth 3+ years. We ran 50+ experiments together in our web platform that unlocked new demand for our premium home furniture brand.<br></p>
+                            <h4>Anne Puukko, Founder</h4><img src="images/arkken.png" loading="lazy" width="100" height="Auto" alt="Arkken" class="absolute">
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                    </section>
+                    <!-- Slide 2 -->
+                    <section class="testimonial-image-left testimonial-slide" style="min-width: 100%; flex-shrink: 0;">
+                      <div class="container">
+                        <div class="testimonial-wrapper-four">
+                          <div class="testimonial-left"><img src="images/Hasan.jpg" loading="lazy" alt="Client testimonial" class="testimonial-image-four"></div>
+                          <div class="testimonial-right">
+                            <div class="heading-small-2 margin-bottom-32px">Technical excellence</div>
+                            <div class="rl_heading1_spacing-block-1"></div>
+                            <p class="testimonial-text-four">Working with Makeshift transformed how we think about our Webflow site. They built a scalable CMS architecture that let our marketing team move 3x faster without engineering bottlenecks.<br></p>
+                            <h4>Marketing Director, KONE Innovation</h4><img src="images/kone.svg" loading="lazy" width="100" height="Auto" alt="KONE" class="absolute">
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- Slide 3 -->
+                    <section class="testimonial-image-left testimonial-slide" style="min-width: 100%; flex-shrink: 0;">
+                      <div class="container">
+                        <div class="testimonial-wrapper-four">
+                          <div class="testimonial-left"><img src="images/Hasan.jpg" loading="lazy" alt="Client testimonial" class="testimonial-image-four"></div>
+                          <div class="testimonial-right">
+                            <div class="heading-small-2 margin-bottom-32px">Results-driven approach</div>
+                            <div class="rl_heading1_spacing-block-1"></div>
+                            <p class="testimonial-text-four">The team didn't just build us a website—they installed a complete lead-capture system. Our demo requests increased 40% in the first month after launch.<br></p>
+                            <h4>Founder, The Guestbook</h4><img src="images/guestbook.svg" loading="lazy" width="100" height="Auto" alt="The Guestbook" class="absolute">
+                          </div>
+                        </div>
+                      </div>
+                    </section>
                   </div>
-                </section>
+                </div>
+                <!-- Slider Navigation -->
+                <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; align-items: center;">
+                  <button class="testimonial-prev" style="background: none; border: 1px solid #333; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;" aria-label="Previous testimonial">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 16L6 10L12 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="testimonial-dots" style="display: flex; gap: 0.5rem;"></div>
+                  <button class="testimonial-next" style="background: none; border: 1px solid #333; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;" aria-label="Next testimonial">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -390,80 +512,83 @@ a {
               </div>
               <div class="services-component">
                 <div class="service">
+                  <div style="width: 200px; height: 200px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <img src="images/3d illustrations/steel.png" alt="Steel" style="width: 100%; height: 100%; object-fit: contain;">
+                  </div>
                   <div class="service-heading">
-                    <h4><strong>Web development</strong></h4>
+                    <h4><strong>Webflow Infrastructure</strong></h4>
                   </div>
                   <div class="service-detail">
-                    <h4 class="service-item">Webflow development</h4>
-                    <h4 class="service-item">Landing pages</h4>
-                    <h4 class="service-item">Webflow CMS</h4>
-                    <h4 class="service-item">Animations and interactions</h4>
-                    <h4 class="service-item">Cookie consent</h4>
-                    <h4 class="service-item">Technical SEO</h4>
-                    <h4 class="service-item">Pagespeed improvement</h4>
+                    <h4 class="service-item">Enterprise Migration</h4>
+                    <h4 class="service-item">Scalable CMS Architecture</h4>
+                    <h4 class="service-item">Technical SEO Setup</h4>
+                    <h4 class="service-item">System Performance Audit</h4>
                   </div>
                 </div>
                 <div class="service">
+                  <div style="width: 200px; height: 200px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <img src="images/3d illustrations/cardboard.png" alt="Cardboard" style="width: 100%; height: 100%; object-fit: contain;">
+                  </div>
                   <div class="service-heading">
-                    <h4><strong>Front-end</strong></h4>
+                    <h4><strong>Conversion Systems</strong></h4>
                   </div>
                   <div class="service-detail">
-                    <h4 class="service-item">JavaScript components</h4>
-                    <h4 class="service-item">React integration</h4>
-                    <h4 class="service-item">VueJS integration</h4>
-                    <h4 class="service-item">NextJS integration</h4>
-                    <h4 class="service-item">Single-page applications (SPA)</h4>
-                    <h4 class="service-item">UI library</h4>
+                    <h4 class="service-item"><strong>The Conversion Layer Install</strong></h4>
+                    <h4 class="service-item">Lead Routing & Logic</h4>
+                    <h4 class="service-item">Attribution & Analytics</h4>
+                    <h4 class="service-item">Gated Content Systems</h4>
                   </div>
                 </div>
                 <div class="service">
+                  <div style="width: 200px; height: 200px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center;">
+                    <img src="images/3d illustrations/fur.png" alt="Fur" style="width: 100%; height: 100%; object-fit: contain;">
+                  </div>
                   <div class="service-heading">
-                    <h4><strong>Cloud and deployment</strong></h4>
+                    <h4><strong>Marketing Operations</strong></h4>
                   </div>
                   <div class="service-detail">
-                    <h4 class="service-item">Static page deployment</h4>
-                    <h4 class="service-item">Cloud hosting</h4>
-                    <h4 class="service-item">Continous integration CI/CD</h4>
-                    <h4 class="service-item">Version control</h4>
-                    <h4 class="service-item">Cache busting</h4>
+                    <h4 class="service-item">HubSpot/Salesforce Integrations</h4>
+                    <h4 class="service-item">AI-Assisted Workflows</h4>
+                    <h4 class="service-item">Zapier/Make Automation</h4>
+                    <h4 class="service-item">CRM Data Hygiene</h4>
                   </div>
                 </div>
-                <div class="service">
-                  <div class="service-heading">
-                    <h4><strong>Backend</strong></h4>
-                  </div>
-                  <div class="service-detail">
-                    <h4 class="service-item">REST API integration</h4>
-                    <h4 class="service-item">Headless CMS integration</h4>
-                    <h4 class="service-item">Webflow CMS API</h4>
-                    <h4 class="service-item">Xano backend</h4>
-                    <h4 class="service-item">Authentication and SSO</h4>
-                  </div>
-                </div>
-                <div class="service">
-                  <div class="service-heading">
-                    <h4><strong>Marketing and Analytics</strong></h4>
-                  </div>
-                  <div class="service-detail">
-                    <h4 class="service-item">Custom workflow</h4>
-                    <h4 class="service-item">Hubspot integration</h4>
-                    <h4 class="service-item">Pipedrive integration</h4>
-                    <h4 class="service-item">Zapier integration</h4>
-                    <h4 class="service-item">Amplitude / Matomo / GA integration</h4>
-                    <h4 class="service-item">GTM and funnel tracking</h4>
-                  </div>
-                </div>
-                <div class="service">
-                  <div class="service-heading">
-                    <h4><strong>GenAI</strong></h4>
-                  </div>
-                  <div class="service-detail">
-                    <h4 class="service-item">Custom GPTs and agents</h4>
-                    <h4 class="service-item">Agentic chatbots</h4>
-                    <h4 class="service-item">RAG systems</h4>
-                    <h4 class="service-item">N8n workflows</h4>
-                  </div>
-                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Brand Chips Section -->
+      <div class="brand-chips-section">
+        <div class="page-padding">
+          <div class="container-large">
+            <div class="brand-chips-header">
+              <h2>Built to integrate with your stack</h2>
+              <p class="brand-chips-subtitle">We connect Webflow to the tools revenue teams actually use—no friction, no guesswork.</p>
+            </div>
+            <div class="brand-chips-wrapper">
+              <div class="brand-chips-track">
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/webflow.com/w/200/h/200" alt="Webflow" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/hubspot.com/w/200/h/200" alt="HubSpot" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/salesforce.com/w/200/h/200" alt="Salesforce" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/zapier.com/w/200/h/200" alt="Zapier" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/make.com/w/200/h/200" alt="Make" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/openai.com/w/200/h/200" alt="ChatGPT" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/anthropic.com/w/200/h/200" alt="Claude" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/google.com/w/200/h/200" alt="Google Analytics" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/memberstack.com/w/200/h/200" alt="Memberstack" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/airtable.com/w/200/h/200" alt="Airtable" height="32"></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/webflow.com/w/200/h/200" alt="Webflow" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/hubspot.com/w/200/h/200" alt="HubSpot" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/salesforce.com/w/200/h/200" alt="Salesforce" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/zapier.com/w/200/h/200" alt="Zapier" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/make.com/w/200/h/200" alt="Make" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/openai.com/w/200/h/200" alt="ChatGPT" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/anthropic.com/w/200/h/200" alt="Claude" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/google.com/w/200/h/200" alt="Google Analytics" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/memberstack.com/w/200/h/200" alt="Memberstack" height="32"></div>
+                <div class="brand-chip"><img src="https://cdn.brandfetch.io/airtable.com/w/200/h/200" alt="Airtable" height="32"></div>
               </div>
             </div>
           </div>
@@ -475,11 +600,12 @@ a {
             <div class="rl-padding-section-large-3">
               <div class="w-layout-grid rl_contact7_component-2">
                 <div class="rl_contact7_content-2">
-                  <div class="capsule">
-                    <div>Interested?</div>
+                  <div class="capsule capsule-wide">
+                    <div>IS YOUR CONTENT CONVERTING?</div>
                   </div>
-                  <h2>Get in touch</h2>
+                  <h2>Get a Conversion Audit</h2>
                   <div class="rl_contact7_spacing-block-2-2"></div>
+                  <p class="rl-text-style-medium-3" style="margin-bottom: 2rem;">Stop letting traffic hit a dead end. Let's install a system that captures value.</p>
                   <div class="rl_contact7_spacing-block-3-2"></div>
                   <div class="rl_contact7_form-block-2 w-form">
                     <form id="wf-form-Contact-7-Form" name="wf-form-Contact-1-Form" data-name="Contact 1 Form" action="https://formsubmit.co/YOUR_EMAIL@example.com" method="post" class="rl_contact7_form-2" data-wf-page-id="62fb841936526c7ae6965d09" data-wf-element-id="16a9ed1f-e5fe-4a47-369b-23179b76c9f4">
@@ -587,6 +713,83 @@ a {
     changeText(); // Set initial text
     setInterval(changeText, 3000); // Change text every 3 seconds
 
+    // Testimonial Slider
+    const track = document.querySelector('.testimonial-track');
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const prevBtn = document.querySelector('.testimonial-prev');
+    const nextBtn = document.querySelector('.testimonial-next');
+    const dotsContainer = document.querySelector('.testimonial-dots');
+    
+    if (track && slides.length > 0) {
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+      
+      // Create dots
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.style.cssText = 'width: 10px; height: 10px; border-radius: 50%; border: none; cursor: pointer; transition: all 0.3s; background-color: ' + (i === 0 ? '#333' : '#ccc');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+      }
+      
+      const dots = dotsContainer.querySelectorAll('button');
+      
+      function updateSlider() {
+        track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+        
+        // Update dots
+        dots.forEach((dot, index) => {
+          dot.style.backgroundColor = index === currentSlide ? '#333' : '#ccc';
+        });
+        
+        // Update button states
+        prevBtn.style.opacity = currentSlide === 0 ? '0.5' : '1';
+        prevBtn.style.cursor = currentSlide === 0 ? 'not-allowed' : 'pointer';
+        nextBtn.style.opacity = currentSlide === totalSlides - 1 ? '0.5' : '1';
+        nextBtn.style.cursor = currentSlide === totalSlides - 1 ? 'not-allowed' : 'pointer';
+      }
+      
+      function goToSlide(index) {
+        if (index >= 0 && index < totalSlides) {
+          currentSlide = index;
+          updateSlider();
+        }
+      }
+      
+      function nextSlide() {
+        if (currentSlide < totalSlides - 1) {
+          currentSlide++;
+          updateSlider();
+        }
+      }
+      
+      function prevSlide() {
+        if (currentSlide > 0) {
+          currentSlide--;
+          updateSlider();
+        }
+      }
+      
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+      
+      // Hover effects for navigation buttons
+      [prevBtn, nextBtn].forEach(btn => {
+        btn.addEventListener('mouseenter', function() {
+          if (this.style.cursor !== 'not-allowed') {
+            this.style.backgroundColor = '#f0f0f0';
+          }
+        });
+        btn.addEventListener('mouseleave', function() {
+          this.style.backgroundColor = 'transparent';
+        });
+      });
+      
+      // Initialize
+      updateSlider();
+    }
+
     // Form submission handler
     const form = document.getElementById('wf-form-Contact-7-Form');
     const successMessage = document.querySelector('.rl-success-message-2-2');
@@ -628,6 +831,34 @@ a {
           }
         });
       });
+    }
+    
+    // Rotating logo animation with cross-fade
+    const logos = [
+      { src: 'https://cdn.brandfetch.io/webflow.com/w/200/h/200', alt: 'Webflow' },
+      { src: 'https://cdn.brandfetch.io/zapier.com/w/200/h/200', alt: 'Zapier' },
+      { src: 'https://cdn.brandfetch.io/hubspot.com/w/200/h/200', alt: 'HubSpot' },
+      { src: 'https://cdn.brandfetch.io/openai.com/w/200/h/200', alt: 'ChatGPT' }
+    ];
+    
+    const rotatingLogo = document.querySelector('.rotating-logo');
+    if (rotatingLogo) {
+      let currentIndex = 0;
+      
+      setInterval(() => {
+        // Fade out current logo
+        rotatingLogo.style.opacity = '0';
+        
+        setTimeout(() => {
+          // Change logo while invisible
+          currentIndex = (currentIndex + 1) % logos.length;
+          rotatingLogo.src = logos[currentIndex].src;
+          rotatingLogo.alt = logos[currentIndex].alt;
+          
+          // Fade in new logo
+          rotatingLogo.style.opacity = '0.7';
+        }, 800); // Longer pause for smoother cross-fade
+      }, 4000); // Display each logo for 4 seconds
     }
   });
 </script>

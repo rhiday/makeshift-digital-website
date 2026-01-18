@@ -1250,6 +1250,107 @@ figcaption {
   font-weight: 500;
 }
 
+.capsule-wide {
+  max-width: max-content;
+  width: auto;
+  padding: .5rem 1rem 2rem;
+  white-space: nowrap;
+}
+
+/* Brand Chips Section */
+.brand-chips-section {
+  padding: 4rem 0;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+.brand-chips-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.brand-chips-header h2 {
+  margin-bottom: 1rem;
+}
+
+.brand-chips-subtitle {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.brand-chips-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Fade effect on sides */
+.brand-chips-wrapper::before,
+.brand-chips-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.brand-chips-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #fafafa 0%, transparent 100%);
+}
+
+.brand-chips-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #fafafa 0%, transparent 100%);
+}
+
+.brand-chips-track {
+  display: flex;
+  gap: 1rem;
+  animation: scrollChips 40s linear infinite;
+  width: fit-content;
+  will-change: transform;
+}
+
+.brand-chip {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 100px;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-chip img {
+  display: block;
+  max-height: 28px;
+  width: auto;
+}
+
+@keyframes scrollChips {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.brand-chips-wrapper:hover .brand-chips-track {
+  animation-play-state: paused;
+}
+
 .services-component {
   grid-column-gap: 5rem;
   grid-row-gap: 5rem;
@@ -1720,6 +1821,15 @@ figcaption {
   align-items: center;
   width: 100%;
   display: flex;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.rl_layout237_item:hover {
+  border-color: #d0d0d0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .rl_layout237_content {
