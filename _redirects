@@ -1,0 +1,7 @@
+# Temporarily hide the standalone services page and Arkken case study.
+/webflow.html /index.html#services 302!
+/webflow /index.html#services 302!
+/webflow/ /index.html#services 302!
+/how-arkken-launches-quick-landing-pages-with-webflow-to-get-early-feedback-on-their-customers.html /index.html#featured 302!
+/how-arkken-launches-quick-landing-pages-with-webflow-to-get-early-feedback-on-their-customers /index.html#featured 302!
+/how-arkken-launches-quick-landing-pages-with-webflow-to-get-early-feedback-on-their-customers/ /index.html#featured 302!
